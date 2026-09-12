@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 IMAGE_FOLDER = 'images'
 
-@app.route('/qr-code-image')
+@app.route("https://fourfellowship.onrender.com/qr-code-image")
 def qr_code_image():
     images = os.listdir(IMAGE_FOLDER)
     chosen_image = random.choice(images)
